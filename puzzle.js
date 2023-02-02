@@ -20,7 +20,7 @@ class Puzzle {
         if (this._solvable(randomArray)) {
             this.cells = [...this._chunks(randomArray, this.col)];
             this._render()
-        } else this._randomize(this.row, this.col)
+        } else this._randomize()
     }
 
     * _chunks(a, n) {
